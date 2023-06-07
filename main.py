@@ -5,9 +5,9 @@ import requests
 logging.basicConfig(level="DEBUG")
 logger = logging.getLogger()
 
-
-for key in logging.Logger.manager.loggerDict:  # see all loggers
-    print(key)
+logging.getLogger("urllib3").setLevel("CRITICAL")
+# for key in logging.Logger.manager.loggerDict:  # see all loggers
+#     print(key)
 
 
 def main(name):
