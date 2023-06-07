@@ -1,33 +1,15 @@
 import logging
+import requests
 
 
-logging.basicConfig(
-    level="DEBUG", filename="my_log.log"
-)  # check handlers in logger
-logger = logging.getLogger()  # default layer = 30
-# print(dir(logger))
-# print()
-# logger.setLevel("DEBUG")  # may be digital(10)
-
-# print(logger.level)
-print(logger.handlers)
+logging.basicConfig(level="DEBUG")
+logger = logging.getLogger()
 
 
 def main(name):
-    logger.debug(
-        f"Enter in the main function: name = {name}"
-    )  # we don't see anything because layer is smaller(10 <= 10)
+    logger.debug(f"Enter in the main function: name = {name}")
 
-    # print(dir(logger))
-
-
-# layer of notifications
-# notset - 0
-# debug - 10
-# info - 20
-# warning - 30
-# error - 40
-# critical - 50
+    r = requests.get("https://www.google.com")
 
 
 if __name__ == "__main__":
