@@ -1,7 +1,9 @@
 import logging
 
 
-logging.basicConfig(level="DEBUG")
+logging.basicConfig(
+    level="DEBUG", filename="my_log.log"
+)  # check handlers in logger
 logger = logging.getLogger()  # default layer = 30
 # print(dir(logger))
 # print()
