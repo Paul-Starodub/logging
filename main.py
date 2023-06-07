@@ -2,6 +2,8 @@ import logging
 
 logger = logging.getLogger()  # default layer = 30
 print(logger)
+print()
+logger.setLevel("DEBUG")  # may be digital(10)
 
 print(logger.level)
 
