@@ -9,7 +9,7 @@ logger.setLevel("DEBUG")  # may be digital(10)
 
 
 def main(name):
-    logger.error(
+    logger.debug(
         f"Enter in the main function: name = {name}"
     )  # we don't see anything because layer is smaller(10 < 30)
 
