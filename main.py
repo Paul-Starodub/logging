@@ -1,11 +1,14 @@
 import logging
 
+
+logging.basicConfig(level="DEBUG")
 logger = logging.getLogger()  # default layer = 30
 # print(dir(logger))
 # print()
-logger.setLevel("DEBUG")  # may be digital(10)
+# logger.setLevel("DEBUG")  # may be digital(10)
 
 # print(logger.level)
+print(logger.handlers)
 
 
 def main(name):
