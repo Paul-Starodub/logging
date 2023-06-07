@@ -1,11 +1,18 @@
 import logging
 
-logger = logging.getLogger()
+logger = logging.getLogger()  # default layer = 30
 print(logger)
+
+print(logger.level)
 
 
 def main(name):
-    logger.warning(f"Enter in the main function: name = {name}")
+    logger.debug(
+        f"Enter in the main function: name = {name}"
+    )  # we don't see anything because layer is smaller(10 < 30)
+
+    # print(dir(logger))
+
 
 # layer of notifications
 # notset - 0
