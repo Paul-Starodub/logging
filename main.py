@@ -1,8 +1,8 @@
 import logging
 
 logger = logging.getLogger()  # default layer = 30
-print(logger)
-print()
+# print(dir(logger))
+# print()
 logger.setLevel("DEBUG")  # may be digital(10)
 
 # print(logger.level)
@@ -11,7 +11,7 @@ logger.setLevel("DEBUG")  # may be digital(10)
 def main(name):
     logger.debug(
         f"Enter in the main function: name = {name}"
-    )  # we don't see anything because layer is smaller(10 < 30)
+    )  # we don't see anything because layer is smaller(10 <= 10)
 
     # print(dir(logger))
 
